@@ -87,37 +87,41 @@
     top: 24px;
     right: 52px; }
 
+.mouth {
+  position: relative;
+  left: 4px; }
+
 .duck-tips .tips-center {
   overflow: hidden;
   top: 150px;
-  left: 59px;
+  left: 60px;
   position: absolute;
-  height: 120px;
-  width: 230px;
+  height: 130px;
+  width: 240px;
   background: #FFF1AC;
   border: 5px solid #000;
-  border-top-left-radius: 56px 60px;
-  border-top-right-radius: 120px 60px;
-  border-bottom-left-radius: 120px 60px;
-  border-bottom-right-radius: 100px 60px; }
+  border-top-left-radius: 65px 60px;
+  border-top-right-radius: 116px 60px;
+  border-bottom-left-radius: 110px 50px;
+  border-bottom-right-radius: 109px 60px; }
 
 .duck-tips .tips-left {
   position: absolute;
   height: 27px;
-  width: 100px;
+  width: 97px;
   border-left: 5px solid #000;
   border-top: 5px solid #000;
   background: #FFF1AC;
-  border-top-left-radius: 11px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 15px 30px;
+  border-top-right-radius: 18px;
   top: 149px;
-  left: 58px;
-  transform: skew(10deg) rotateZ(-11deg); }
+  left: 57px;
+  transform: skew(17deg) rotateZ(-11deg); }
 
 .duck-tips .tips-right {
   position: absolute;
-  height: 38px;
-  width: 103px;
+  height: 28px;
+  width: 96px;
   border-right: 5px solid #000;
   border-top: 5px solid #000;
   background: #FFF1AC;
@@ -129,27 +133,27 @@
 
 .duck-tips .tips-upper {
   position: absolute;
-  height: 38px;
-  width: 50px;
+  height: 43px;
+  width: 55px;
   border-right: 5px solid #000;
   border-top: 5px solid #000;
   border-left: 7px solid #fff1ac;
   background: #FFF1AC;
   border-top-left-radius: 11px;
   border-top-right-radius: 14px;
-  top: 125px;
-  left: 132px;
-  transform: skew(-4deg) rotateZ(-47deg); }
+  top: 123px;
+  left: 134px;
+  transform: skew(-7deg) rotateZ(-47deg); }
 
 .duck-tips .tips-shadow {
   position: absolute;
-  height: 120px;
-  width: 230px;
+  height: 130px;
+  width: 240px;
   border: 6px solid #DACE95;
-  border-top-left-radius: 56px 60px;
-  border-top-right-radius: 120px 60px;
-  border-bottom-left-radius: 120px 60px;
-  border-bottom-right-radius: 100px 60px;
+  border-top-left-radius: 65px 60px;
+  border-top-right-radius: 116px 60px;
+  border-bottom-left-radius: 110px 50px;
+  border-bottom-right-radius: 109px 60px;
   bottom: 0;
   left: -3px;
   opacity: .4; }
@@ -177,3 +181,30 @@
       background: #000;
       border-radius: 14px;
       transform: rotate(33deg); }
+
+.body {
+  overflow: hidden;
+  position: absolute;
+  height: 280px;
+  width: 360px;
+  border: 6px solid #000;
+  background: #f9be00;
+  top: 240px;
+  left: 124px;
+  border-top-right-radius: 136px 140px;
+  border-top-left-radius: 104px 140px;
+  border-bottom-right-radius: 180px 140px;
+  border-bottom-left-radius: 180px 132px; }
+  .body .body-shadow {
+    position: absolute;
+    border-top-right-radius: 122px 140px;
+    border-top-left-radius: 122px 142px;
+    border-bottom-right-radius: 180px 122px;
+    border-bottom-left-radius: 215px 132px;
+    height: 280px;
+    width: 380px;
+    border: 12px solid #D7A400;
+    top: -11px;
+    left: -20px;
+    border-left: 21px solid #d7a400;
+    transform: rotate(4deg); }
