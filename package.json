@@ -1,0 +1,11 @@
+{
+  "name": "pure-css-psyduck",
+  "version": "0.0.1",
+  "description": "These are Samples drawn with CSS3 only,with no images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

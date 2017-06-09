@@ -1,0 +1,58 @@
+.psyduck {
+  margin-top: 40px;
+  height: 600px;
+  width: 600px;
+  border: solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden; }
+
+.head {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 94px;
+  height: 230px;
+  width: 320px;
+  background: #f9be00;
+  border: 6px solid black;
+  border-radius: 50%; }
+  .head .hairs {
+    position: absolute;
+    left: 48%;
+    z-index: -1; }
+    .head .hairs .hair {
+      position: absolute; }
+      .head .hairs .hair.hair-left {
+        top: -44px;
+        left: -50px;
+        height: 60px;
+        width: 30px;
+        border-right: 6px solid transparent;
+        border-left: 7px solid transparent;
+        border-top: 63px solid #000;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transform: skew(11deg) rotate(-67deg); }
+      .head .hairs .hair.hair-middle {
+        top: -89px;
+        transform: rotate(-30deg);
+        left: -29px;
+        height: 120px;
+        width: 30px;
+        border-right: 8px solid transparent;
+        border-left: 7px solid transparent;
+        border-top: 95px solid #000;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 10px; }
+      .head .hairs .hair.hair-right {
+        top: -86px;
+        left: -6px;
+        height: 100px;
+        width: 25px;
+        border-right: 8px solid transparent;
+        border-left: 7px solid transparent;
+        border-top: 84px solid #000;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 12px;
+        transform: rotate(-3deg); }
