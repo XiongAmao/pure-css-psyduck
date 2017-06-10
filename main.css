@@ -1,3 +1,23 @@
+@keyframes shake-hair {
+  0% {
+    transform: rotate(5deg); }
+  20% {
+    transform: rotate(-3deg); }
+  30% {
+    transform: rotate(0deg); }
+  40% {
+    transform: rotate(-3deg); }
+  50% {
+    transform: rotate(0deg); }
+  60% {
+    transform: rotate(-3deg); }
+  70% {
+    transform: rotate(0deg); }
+  90% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(5deg); } }
+
 .psyduck {
   margin-top: 40px;
   height: 600px;
@@ -22,7 +42,8 @@
   position: absolute;
   left: 48%;
   top: 100px;
-  z-index: -1; }
+  z-index: -1;
+  animation: shake-hair 10s linear infinite; }
   .hair-s .hair {
     position: absolute; }
     .hair-s .hair.hair-left {
@@ -254,7 +275,7 @@
     border-top-left-radius: 195%;
     border-top-right-radius: 117%;
     border-bottom-right-radius: 135%;
-    border: 4px solid #0A0A0A;
+    border: 4.5px solid #0A0A0A;
     border-bottom: none;
     transform: rotateZ(15deg);
     clip-path: polygon(0 0, 100% 0, 100% 27%, 79% 24%, 19% 22%, 1% 12%, 0 6%); }
@@ -387,3 +408,28 @@
   top: 0px;
   left: 400px;
   transform: rotateY(165deg) rotate(1deg); }
+
+.code-info {
+  font-family: monospace, sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-align: right;
+  right: 5px;
+  bottom: 10px;
+  position: fixed; }
+  .code-info p {
+    margin: 0; }
+  .code-info a {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none; }
+    .code-info a:visited {
+      color: #000; }
+    .code-info a:hover {
+      color: #000; }
+  .code-info .code-info-design {
+    color: #000; }
+    .code-info .code-info-design:visited {
+      color: #000; }
+    .code-info .code-info-design:hover {
+      color: #000; }
