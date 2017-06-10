@@ -1,13 +1,26 @@
+@-webkit-keyframes shake-hair {
+  0% { -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+  20% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
+  30% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+  40% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
+  50% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+  60% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg);}
+  70% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  90% {-webkit-transform: rotate(3deg);transform: rotate(3deg);}
+  100% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+}
+
+
 @keyframes shake-hair {
-  0% { transform: rotate(5deg); }
-  20% { transform: rotate(-3deg); }
-  30% { transform: rotate(0deg);}
-  40% { transform: rotate(-3deg); }
-  50% { transform: rotate(0deg);}
-  60% { transform: rotate(-3deg);}
-  70% { transform: rotate(0deg); }
-  90% {transform: rotate(3deg);}
-  100% {transform: rotate(5deg);}
+  0% { -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+  20% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
+  30% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+  40% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
+  50% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+  60% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg);}
+  70% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  90% {-webkit-transform: rotate(3deg);transform: rotate(3deg);}
+  100% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
 }
 
 
@@ -38,9 +51,10 @@
     left: 48%;
     top: 100px;
     z-index: -1;
-    animation: shake-hair 10s linear infinite ;
+    -webkit-animation: shake-hair 10s linear infinite ;
+            animation: shake-hair 10s linear infinite ;
     .hair {
-        position: absolute; // opacity: .6;
+        position: absolute; /* opacity: .6;*/
         &.hair-left {
             top: -44px;
             left: -50px;
@@ -51,11 +65,13 @@
             border-top: 63px solid #000;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            transform: skew(11deg) rotate(-67deg);
+            -webkit-transform: skew(11deg) rotate(-67deg);
+                    transform: skew(11deg) rotate(-67deg);
         }
         &.hair-middle {
             top: -89px;
-            transform: rotate(-30deg);
+            -webkit-transform: rotate(-30deg);
+                    transform: rotate(-30deg);
             left: -29px;
             height: 120px;
             width: 30px;
@@ -75,7 +91,8 @@
             border-top: 84px solid #000;
             border-top-left-radius: 5px;
             border-top-right-radius: 12px;
-            transform: rotate(-3deg)
+            -webkit-transform: rotate(-3deg);
+                    transform: rotate(-3deg)
         }
     }
 }
@@ -91,12 +108,14 @@
         &.eye-left {
             left: 47px;
             top: 62px;
-            transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+                    transform: rotate(-8deg);
         }
         &.eye-right {
             top: 61px;
             right: 25px;
-            transform: rotate(8deg);
+            -webkit-transform: rotate(8deg);
+                    transform: rotate(8deg);
         }
     }
     .dot {
@@ -147,7 +166,8 @@
         border-top-right-radius: 18px;
         top: 149px;
         left: 57px;
-        transform: skew(17deg) rotateZ(-11deg);
+        -webkit-transform: skew(17deg) rotateZ(-11deg);
+                transform: skew(17deg) rotateZ(-11deg);
     }
     .tips-right {
         position: absolute;
@@ -160,7 +180,8 @@
         border-top-right-radius: 14px;
         top: 139px;
         left: 167px;
-        transform: skew(-4deg) rotateZ(2deg);
+        -webkit-transform: skew(-4deg) rotateZ(2deg);
+                transform: skew(-4deg) rotateZ(2deg);
     }
     .tips-upper {
         position: absolute;
@@ -174,7 +195,8 @@
         border-top-right-radius: 14px;
         top: 123px;
         left: 134px;
-        transform: skew(-7deg) rotateZ(-47deg);
+        -webkit-transform: skew(-7deg) rotateZ(-47deg);
+                transform: skew(-7deg) rotateZ(-47deg);
     }
     .tips-shadow {
         position: absolute;
@@ -204,7 +226,8 @@
             border-right: 2px solid #000;
             border-top: 4px solid #000;
             border-top-right-radius: 12px;
-            transform: rotate(-9deg);
+            -webkit-transform: rotate(-9deg);
+                    transform: rotate(-9deg);
             top: -36px;
             left: -34px;
         }
@@ -215,7 +238,8 @@
             height: 8px;
             background: #000;
             border-radius: 14px;
-            transform: rotate(33deg);
+            -webkit-transform: rotate(33deg);
+                    transform: rotate(33deg);
         }
     }
 }
@@ -246,7 +270,8 @@
         top: -11px;
         left: -20px;
         border-left: 21px solid #d7a400;
-        transform: rotate(4deg);
+        -webkit-transform: rotate(4deg);
+                transform: rotate(4deg);
     }
 }
 
@@ -263,7 +288,8 @@
         border-top-left-radius: 190%;
         border-top-right-radius: 132%;
         border-bottom-right-radius: 72px 140%;
-        transform: rotateZ(3deg);
+        -webkit-transform: rotateZ(3deg);
+                transform: rotateZ(3deg);
         border: 6px solid #0A0A0A;
         border-bottom: none;
     }
@@ -281,7 +307,8 @@
             border-bottom-right-radius: 54%;
             border: 5px solid #0A0A0A;
             border-bottom: none;
-            clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 37%);
+            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 37%);
+                    clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 37%);
         }
         .middle {
             z-index: 10;
@@ -297,8 +324,10 @@
             border-bottom-right-radius: 135%;
             border: 4.5px solid #0A0A0A;
             border-bottom: none;
-            transform: rotateZ(15deg);
-            clip-path: polygon(0 0, 100% 0, 100% 27%, 79% 24%, 19% 22%, 1% 12%, 0 6%);
+            -webkit-transform: rotateZ(15deg);
+                    transform: rotateZ(15deg);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 27%, 79% 24%, 19% 22%, 1% 12%, 0 6%);
+                    clip-path: polygon(0 0, 100% 0, 100% 27%, 79% 24%, 19% 22%, 1% 12%, 0 6%);
         }
         .right {
             position: absolute;
@@ -314,8 +343,10 @@
             border-bottom-right-radius: 54%;
             border: 5px solid #0A0A0A;
             border-bottom: none;
-            transform: rotateZ(18deg);
-            clip-path: polygon(100% 0, 111% 41%, 96% 47%, 49% 25%, 21% 12%, 7% 8%, 7% 4%, 10% 4%, 0 7%, 0 0);
+            -webkit-transform: rotateZ(18deg);
+                    transform: rotateZ(18deg);
+            -webkit-clip-path: polygon(100% 0, 111% 41%, 96% 47%, 49% 25%, 21% 12%, 7% 8%, 7% 4%, 10% 4%, 0 7%, 0 0);
+                    clip-path: polygon(100% 0, 111% 41%, 96% 47%, 49% 25%, 21% 12%, 7% 8%, 7% 4%, 10% 4%, 0 7%, 0 0);
         }
     }
 }
@@ -353,8 +384,10 @@
             border-bottom-right-radius: 135%;
             border: 5px solid #0A0A0A;
             border-bottom: none;
-            transform: rotateZ(-20deg);
-            clip-path: polygon(100% 0, 100% 30%, 94% 41%, 84% 45%, 67% 45%, 27% 22%, 13% 19%, 1% 13%, 0 17%, 0 0);
+            -webkit-transform: rotateZ(-20deg);
+                    transform: rotateZ(-20deg);
+            -webkit-clip-path: polygon(100% 0, 100% 30%, 94% 41%, 84% 45%, 67% 45%, 27% 22%, 13% 19%, 1% 13%, 0 17%, 0 0);
+                    clip-path: polygon(100% 0, 100% 30%, 94% 41%, 84% 45%, 67% 45%, 27% 22%, 13% 19%, 1% 13%, 0 17%, 0 0);
         }
         .right {}
     }
@@ -374,7 +407,8 @@
     border-bottom-right-radius: 135%;
     border: 5px solid #0A0A0A;
     border-bottom: none;
-    transform: rotateZ(-64deg);
+    -webkit-transform: rotateZ(-64deg);
+            transform: rotateZ(-64deg);
 }
 
 .foots {
@@ -395,11 +429,13 @@
     height: 120px;
     top: 10px;
     left: 50px;
-    clip-path: polygon(0 0, 100% 0, 100% 93%, 80% 50%, 55% 47%, 53% 21%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 80% 50%, 55% 47%, 53% 21%);
+            clip-path: polygon(0 0, 100% 0, 100% 93%, 80% 50%, 55% 47%, 53% 21%);
     border-top-left-radius: 100px 10px;
     border-bottom-right-radius: 10px 100px;
     border: 5px solid;
-    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
 }
 
 .fl-left,
@@ -411,7 +447,8 @@
     border-radius: 42%;
     top: 43px;
     left: 40px;
-    transform: rotate(165deg);
+    -webkit-transform: rotate(165deg);
+            transform: rotate(165deg);
 }
 
 .fl-right,
@@ -423,7 +460,8 @@
     border-radius: 42%;
     top: 60px;
     left: 138px;
-    transform: rotate(27deg);
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
 }
 
 .fl-middle,
@@ -436,14 +474,16 @@
     top: 22px;
     left: 98px;
     border-bottom-left-radius: 54px 20px;
-    transform: skewY(-14deg) rotate(-19deg);
+    -webkit-transform: skewY(-14deg) rotate(-19deg);
+            transform: skewY(-14deg) rotate(-19deg);
 }
 
 .foot-right {
     position: absolute;
     top: 0px;
     left: 400px;
-    transform: rotateY(165deg) rotate(1deg);
+    -webkit-transform: rotateY(165deg) rotate(1deg);
+            transform: rotateY(165deg) rotate(1deg);
     .fr-left {}
     .fr-right {}
     .fr-middle {}
@@ -453,7 +493,7 @@
     font-family: monospace, sans-serif;
     font-size: 12px;
     color: #000;
-    text-align: right; // position: relative;
+    text-align: right; /* position: relative;*/
     right: 5px;
     bottom: 10px;
     position: fixed;

@@ -1,21 +1,59 @@
-@keyframes shake-hair {
+@-webkit-keyframes shake-hair {
   0% {
+    -webkit-transform: rotate(5deg);
     transform: rotate(5deg); }
   20% {
+    -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg); }
   30% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   40% {
+    -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg); }
   50% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   60% {
+    -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg); }
   70% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   90% {
+    -webkit-transform: rotate(3deg);
     transform: rotate(3deg); }
   100% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); } }
+
+@keyframes shake-hair {
+  0% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  20% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg); }
+  30% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  40% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  60% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg); }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  90% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+  100% {
+    -webkit-transform: rotate(5deg);
     transform: rotate(5deg); } }
 
 .psyduck {
@@ -43,9 +81,11 @@
   left: 48%;
   top: 100px;
   z-index: -1;
+  -webkit-animation: shake-hair 10s linear infinite;
   animation: shake-hair 10s linear infinite; }
   .hair-s .hair {
-    position: absolute; }
+    position: absolute;
+    /* opacity: .6;*/ }
     .hair-s .hair.hair-left {
       top: -44px;
       left: -50px;
@@ -56,9 +96,11 @@
       border-top: 63px solid #000;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
+      -webkit-transform: skew(11deg) rotate(-67deg);
       transform: skew(11deg) rotate(-67deg); }
     .hair-s .hair.hair-middle {
       top: -89px;
+      -webkit-transform: rotate(-30deg);
       transform: rotate(-30deg);
       left: -29px;
       height: 120px;
@@ -78,6 +120,7 @@
       border-top: 84px solid #000;
       border-top-left-radius: 5px;
       border-top-right-radius: 12px;
+      -webkit-transform: rotate(-3deg);
       transform: rotate(-3deg); }
 
 .eyes .eye {
@@ -90,10 +133,12 @@
   .eyes .eye.eye-left {
     left: 47px;
     top: 62px;
+    -webkit-transform: rotate(-8deg);
     transform: rotate(-8deg); }
   .eyes .eye.eye-right {
     top: 61px;
     right: 25px;
+    -webkit-transform: rotate(8deg);
     transform: rotate(8deg); }
 
 .eyes .dot {
@@ -138,6 +183,7 @@
   border-top-right-radius: 18px;
   top: 149px;
   left: 57px;
+  -webkit-transform: skew(17deg) rotateZ(-11deg);
   transform: skew(17deg) rotateZ(-11deg); }
 
 .duck-tips .tips-right {
@@ -151,6 +197,7 @@
   border-top-right-radius: 14px;
   top: 139px;
   left: 167px;
+  -webkit-transform: skew(-4deg) rotateZ(2deg);
   transform: skew(-4deg) rotateZ(2deg); }
 
 .duck-tips .tips-upper {
@@ -165,6 +212,7 @@
   border-top-right-radius: 14px;
   top: 123px;
   left: 134px;
+  -webkit-transform: skew(-7deg) rotateZ(-47deg);
   transform: skew(-7deg) rotateZ(-47deg); }
 
 .duck-tips .tips-shadow {
@@ -193,6 +241,7 @@
       border-right: 2px solid #000;
       border-top: 4px solid #000;
       border-top-right-radius: 12px;
+      -webkit-transform: rotate(-9deg);
       transform: rotate(-9deg);
       top: -36px;
       left: -34px; }
@@ -203,6 +252,7 @@
       height: 8px;
       background: #000;
       border-radius: 14px;
+      -webkit-transform: rotate(33deg);
       transform: rotate(33deg); }
 
 .body {
@@ -231,6 +281,7 @@
     top: -11px;
     left: -20px;
     border-left: 21px solid #d7a400;
+    -webkit-transform: rotate(4deg);
     transform: rotate(4deg); }
 
 .left-hand {
@@ -246,6 +297,7 @@
     border-top-left-radius: 190%;
     border-top-right-radius: 132%;
     border-bottom-right-radius: 72px 140%;
+    -webkit-transform: rotateZ(3deg);
     transform: rotateZ(3deg);
     border: 6px solid #0A0A0A;
     border-bottom: none; }
@@ -262,6 +314,7 @@
     border-bottom-right-radius: 54%;
     border: 5px solid #0A0A0A;
     border-bottom: none;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 37%);
     clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 37%); }
   .left-hand .left-finger .middle {
     z-index: 10;
@@ -277,7 +330,9 @@
     border-bottom-right-radius: 135%;
     border: 4.5px solid #0A0A0A;
     border-bottom: none;
+    -webkit-transform: rotateZ(15deg);
     transform: rotateZ(15deg);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 27%, 79% 24%, 19% 22%, 1% 12%, 0 6%);
     clip-path: polygon(0 0, 100% 0, 100% 27%, 79% 24%, 19% 22%, 1% 12%, 0 6%); }
   .left-hand .left-finger .right {
     position: absolute;
@@ -293,7 +348,9 @@
     border-bottom-right-radius: 54%;
     border: 5px solid #0A0A0A;
     border-bottom: none;
+    -webkit-transform: rotateZ(18deg);
     transform: rotateZ(18deg);
+    -webkit-clip-path: polygon(100% 0, 111% 41%, 96% 47%, 49% 25%, 21% 12%, 7% 8%, 7% 4%, 10% 4%, 0 7%, 0 0);
     clip-path: polygon(100% 0, 111% 41%, 96% 47%, 49% 25%, 21% 12%, 7% 8%, 7% 4%, 10% 4%, 0 7%, 0 0); }
 
 .right-hand {
@@ -328,7 +385,9 @@
       border-bottom-right-radius: 135%;
       border: 5px solid #0A0A0A;
       border-bottom: none;
+      -webkit-transform: rotateZ(-20deg);
       transform: rotateZ(-20deg);
+      -webkit-clip-path: polygon(100% 0, 100% 30%, 94% 41%, 84% 45%, 67% 45%, 27% 22%, 13% 19%, 1% 13%, 0 17%, 0 0);
       clip-path: polygon(100% 0, 100% 30%, 94% 41%, 84% 45%, 67% 45%, 27% 22%, 13% 19%, 1% 13%, 0 17%, 0 0); }
 
 .tail {
@@ -345,6 +404,7 @@
   border-bottom-right-radius: 135%;
   border: 5px solid #0A0A0A;
   border-bottom: none;
+  -webkit-transform: rotateZ(-64deg);
   transform: rotateZ(-64deg); }
 
 .foots {
@@ -363,10 +423,12 @@
   height: 120px;
   top: 10px;
   left: 50px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 80% 50%, 55% 47%, 53% 21%);
   clip-path: polygon(0 0, 100% 0, 100% 93%, 80% 50%, 55% 47%, 53% 21%);
   border-top-left-radius: 100px 10px;
   border-bottom-right-radius: 10px 100px;
   border: 5px solid;
+  -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg); }
 
 .fl-left,
@@ -378,6 +440,7 @@
   border-radius: 42%;
   top: 43px;
   left: 40px;
+  -webkit-transform: rotate(165deg);
   transform: rotate(165deg); }
 
 .fl-right,
@@ -389,6 +452,7 @@
   border-radius: 42%;
   top: 60px;
   left: 138px;
+  -webkit-transform: rotate(27deg);
   transform: rotate(27deg); }
 
 .fl-middle,
@@ -401,12 +465,14 @@
   top: 22px;
   left: 98px;
   border-bottom-left-radius: 54px 20px;
+  -webkit-transform: skewY(-14deg) rotate(-19deg);
   transform: skewY(-14deg) rotate(-19deg); }
 
 .foot-right {
   position: absolute;
   top: 0px;
   left: 400px;
+  -webkit-transform: rotateY(165deg) rotate(1deg);
   transform: rotateY(165deg) rotate(1deg); }
 
 .code-info {
@@ -414,6 +480,7 @@
   font-size: 12px;
   color: #000;
   text-align: right;
+  /* position: relative;*/
   right: 5px;
   bottom: 10px;
   position: fixed; }
